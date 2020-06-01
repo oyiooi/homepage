@@ -24,18 +24,19 @@ var tl = document.querySelector('.tl');
 var timer;
 var back = document.querySelector('.back');
 var container = document.querySelector('.container');
+var part1 = document.getElementById('part1');
 
 //indexer
 indexer.addEventListener('click',function(e){
     switch(e.target.id){
         case 'c1':
-            e.target.classList.add('focus'),c2.classList.remove('focus'),c3.classList.remove('focus');
+            e.target.classList.add('focus'),c2.classList.remove('focus'),c3.classList.remove('focus'),part1.scrollIntoView(false);
             break;
         case 'c2':
-            e.target.classList.add('focus'),c1.classList.remove('focus'),c3.classList.remove('focus');
+            e.target.classList.add('focus'),c1.classList.remove('focus'),c3.classList.remove('focus'),part2.scrollIntoView(false);
             break;
         case 'c3':
-            e.target.classList.add('focus'),c1.classList.remove('focus'),c2.classList.remove('focus');
+            e.target.classList.add('focus'),c1.classList.remove('focus'),c2.classList.remove('focus'),part3.scrollIntoView(false);
             break;
         default:
             console.log('default');

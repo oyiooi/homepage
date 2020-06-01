@@ -467,7 +467,7 @@ body>div {
 
 .inputC {
     position: relative;
-    top: -100px;
+    top: -50px;
 }
 
 .blink::before {
@@ -479,9 +479,6 @@ body>div {
     height: 22px;
     background-color: white;
     z-index: 2;
-    -webkit-animation: shink 1s linear infinite normal;
-    -moz-animation: shink 1s linear infinite normal;
-    -o-animation: shink 1s linear infinite normal;
     animation: shink 1s linear infinite normal;
 }
 
