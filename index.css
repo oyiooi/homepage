@@ -79,8 +79,8 @@ body>div {
 .page {
     position: absolute;
     box-sizing: border-box;
-    background-image: radial-gradient(#442409, transparent);
-    background-color: #2e2ed0c7;
+    background-image: radial-gradient(#000000, transparent);
+    background-color: #5757a3c7;
 }
 
 .back {
@@ -96,8 +96,8 @@ body>div {
     width: 100vw;
     height: 100vh;
     perspective: 600px;
-    background-color: rgba(3, 3, 101, 0.82);
-    background-image: radial-gradient(#ce7b36, transparent);
+    background-color: rgb(82, 82, 132);
+    background-image: radial-gradient(#000000, transparent);
     transform: translateZ(-50vh);
 }
 

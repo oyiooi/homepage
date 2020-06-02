@@ -69,13 +69,18 @@ container.addEventListener('touchmove',function(e){
 })
 
 //star color change
+var colorArray = ['black','#d8aa1e','#c613ec','#38d957','#e31754']
 
-container.addEventListener('click',function(){
+function changeC(){
     var nodes = back.children;
+    let colorIndex = Math.floor(Math.random(0,1)*colorArray.length);
+    var chosedColor = colorArray[colorIndex]
     for (node of nodes){
-        node.style.borderColor = 'white';
+        node.style.borderColor = chosedColor;
     }
-})
+}
+
+setInterval(changeC,200);
 
 //wheel 事件
 container.addEventListener('wheel',function(e){
